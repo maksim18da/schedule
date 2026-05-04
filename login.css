@@ -70,3 +70,20 @@ body{
 #password.error{
     border: 2px solid red;
 }
+@media (min-width: 375px){
+    .login{
+        padding: 20px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .panel span{
+        font-size: 15px;
+    }
+    #password{
+        min-width: 300px;
+    }
+    .save_btn{
+        font-size: 15px;
+    }
+}
