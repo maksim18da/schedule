@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./schedule.css">
+    <title>Online Schedule</title>
+</head>
+<body>
+    <header class="title">
+        <span class="title_span">Weekly<br>planner</span>
+        <div class="wk_mnth">
+            <div class="box">
+                <span class="week_name"></span>
+            </div>
+            <div class="box">
+                <span class="month_name"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="days">
+            <div class="day">
+                <div class="title_day"><span>monday</span></div>
+                <div class="lines">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                </div>
+            </div>
+            <div class="day">
+                <div class="title_day"><span>tuesday</span></div>
+                <div class="lines">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                </div>
+            </div>
+            <div class="day">
+                <div class="title_day"><span>wednesday</span></div>
+                <div class="lines">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                </div>
+            </div>
+            <div class="day">
+                <div class="title_day"><span>thursday</span></div>
+                <div class="lines">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                </div>
+            </div>
+            <div class="day">
+                <div class="title_day"><span>friday</span></div>
+                <div class="lines">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                </div>
+            </div>
+            <div class="day">
+                <div class="title_day"><span>saturday</span></div>
+                <div class="lines">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                </div>
+            </div>
+            <div class="day">
+                <div class="title_day"><span>sunday</span></div>
+                <div class="lines">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                    <hr style="border:0; height:2px; background-color: #333;">
+                </div>
+            </div>
+        </div>
+        <div class="schedule">
+            <button class="close_btn">X</button>
+            <div class="main_page">
+                <div class="tasks_panel">
+                    <span>Add Tasks Panel</span>
+                    <div class="task_add">
+                        <input type="text" placeholder="New task" id="task">
+                        <input type="submit" value="Add" id="submit">
+                    </div>
+                    <div class="task_time">
+                        <input type="time" name="task_time" id="time_task">
+                        <input type="submit" value="Add" id="time_submit" class="time_btn">
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search task" id="search_task" class="search_task">
+                        <input type="submit" value="Search" id="search_submit" class="search_btn">
+                    </div>
+                </div>
+                <div class="tasks"></div>
+            </div>
+        </div>
+    </main>
+    <script defer src="./script.js"></script>
+</body>
+</html>
